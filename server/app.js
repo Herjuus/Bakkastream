@@ -33,7 +33,7 @@ nms.on('donePublish', (id, StreamPath, args) => {
     const streamInfo = activeStreams[streamKey];
     const endTime = new Date();
     const duration = endTime - streamInfo.startTime;
-    console.log(`Stream ${streamKey} has ended publishing after ${duration} ms.`);
+    console.log(`Stream ${streamKey} has ended publishing after ${(duration / 1000)} seconds.`);
     delete activeStreams[streamKey];
 });
 
