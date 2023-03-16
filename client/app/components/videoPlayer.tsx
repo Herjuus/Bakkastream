@@ -11,8 +11,9 @@ export default function Home() {
     <main>
       <ReactFlvPlayer
         url = 'http://localhost:8000/live/123.flv'
-        isMuted = {false}
-        isLive = {true}
+        isLive={true}
+        isMuted={false}
+        showControlls={false}
       />
     </main>
   )
