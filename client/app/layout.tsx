@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Bakkastream',
+  title: 'Bakkastreaming',
   description: 'Streaming platform',
 }
 
