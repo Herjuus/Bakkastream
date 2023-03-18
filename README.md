@@ -1,7 +1,7 @@
 # Bakkastreaming
 > Fullstack streaming application for Elvebakken VGS, Norway.
 
-[bakkastreaming.no](https://bakkastreaming.no)
+[bakkastreaming.no](https://bakkastreaming.no) (Not open yet)
 
 ## Stack
 
