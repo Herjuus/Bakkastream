@@ -7,7 +7,7 @@
 
 ## Stack
 
-This application is buildt with Nextjs, Node, MongoDB.
+This application is buildt with Nextjs, TailwindCSS, Node, MongoDB.
 
 ## Meta
 
