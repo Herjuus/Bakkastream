@@ -1,7 +1,7 @@
 # Bakkastreaming
 > Fullstack streaming application for Elvebakken VGS, Norway.
 
-## Stacks
+## Stack
 
 This application is buildt with Nextjs, Node, MongoDB.
 
