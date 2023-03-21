@@ -1,3 +1,15 @@
+const express = require('express');
+const mongoose = require('mongoose');
+
+const app = express();
+
+const port = 5000;
+
+mongoose
+  .connect('mongodb+srv://admin:Password1234@streamdb.pdgbrgx.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to mongoDB'))
+  .catch((err) => console.log(err));
+
 const NodeMediaServer = require('node-media-server');
 
 const config = {
@@ -38,3 +50,5 @@ nms.on('donePublish', (id, StreamPath, args) => {
 });
 
 nms.run();
+
+// app.listen(port, () => console.log(`API running on port ${port}`));
