@@ -1,3 +1,6 @@
+import { SessionProvider } from 'next-auth/react';
+import getCurrentUser from './actions/getCurrentUser'
+import Header from './components/header';
 import './globals.css'
 
 export const metadata = {
@@ -5,14 +8,20 @@ export const metadata = {
   description: 'Streaming platform',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+  const currentUser = await getCurrentUser();
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className=''>
+        <Header currentUser={currentUser}/>
+        {children}
+      </body>
     </html>
   )
 }
